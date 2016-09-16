@@ -28,15 +28,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-    html_style = '_static/css/main.css'
-else:
-    html_context = {
-        'css_files' : [
-            'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
-            'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-            'css/main.css'
-        ]
-    }
+
 
 # -- General configuration ------------------------------------------------
 
@@ -143,7 +135,7 @@ todo_include_todos = False
 # html_theme = 'alabaster'
 
 # Overwrites default theme options
-html_style = 'css/main.css'
+html_style = 'css/theme_overrides.css'
 
 html_context = {
   "display_github": True,
@@ -187,6 +179,10 @@ html_context = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+def setup(app):
+   #app.add_javascript("custom.js")
+   app.add_stylesheet("css/theme_overrides.css")
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
