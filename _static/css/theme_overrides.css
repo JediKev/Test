@@ -113,3 +113,7 @@ li.toctree-l1.a {
 .rst-content .highlighted {
   background: #FFE065;
 }
+
+.rst-versions {
+  border-top: none;
+}
