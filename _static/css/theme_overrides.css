@@ -45,9 +45,9 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
   background-color: #FF9016;
 }
 
-.wy-nav-side {
+/*.wy-nav-side {
   background: #F7F7F7;
-}
+}*/
 
 .wy-menu-vertical a:active {
   background-color: #FF9016;
