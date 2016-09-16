@@ -140,7 +140,7 @@ html_style = 'css/main.css'
 html_context = {
   "display_github": True,
   "github_user": "JediKev",
-  "github_repo": "osTicketDocs",
+  "github_repo": "Test",
   "github_version": "master",
   "conf_py_path": "/",
   "source_suffix": source_suffix,
